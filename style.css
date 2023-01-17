@@ -1,0 +1,125 @@
+.italic{
+    font-style: italic;
+}
+
+html,body{
+    height:100%;
+    width:100%;
+}
+
+body {
+    /*background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(108,9,121,1) 12%, rgba(0,212,255,1) 100%);
+*/
+    font-family: 'Roboto',sans-serif;
+    background: rgb(0,212,255);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(122,13,158,1) 16%, rgba(2,0,36,1) 100%);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    font-family: 'Roboto',sans-serif;
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.form{
+    display:flex;
+    justify-content: space-around;
+    height: 8vh;
+   margin-bottom: 3vh;
+}
+
+#champ {
+    width: 82vw;
+    
+    padding-left: 1vw;
+    font-size: 2vw;
+}
+
+#btnAjouter {
+    cursor: pointer;
+    width: 17vw;
+    /*background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(162,83,166,1) 36%, rgba(210,155,35,1) 100%);*/
+    background-color:greenyellow;
+}
+ 
+#btnAjouter,#champ{
+      border: 2px solid teal;
+      border-radius : 5px;
+}
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+
+ol {
+    /*max-width: 350px*/
+    counter-reset: my-awesome-counter;
+    list-style: none;
+    padding-left: 40px;
+}
+
+ol li {
+    margin: 0 0 0.5rem 0;
+    counter-increment: my-awesome-counter;
+    position: relative;
+}
+
+    ol li::before {
+        content: counter(my-awesome-counter);
+        color: #fcd000;
+        font-size: 1.5rem;
+        font-weight: bold;
+        position: absolute;
+        --size: 32px;
+        left: calc(-1 * var(--size) - 0px);
+        line-height: var(--size);
+        width: var(--size);
+        height: var(--size);
+        top: 0;
+        transform: rotate(-10deg);
+        background: black;
+       /* border-radius: 50%; */
+        text-align: center;
+        box-shadow: 1px 1px 0 #999;     
+    }
+
+li{
+    text-transform: capitalize;
+   background-color:beige;
+   
+}
+
+.delete{
+    color:red;
+}
+
+.star{
+    color:yellow;
+}
+
+.urgent{
+    color: gray;
+}
+
+.delete,.urgent{
+    cursor: pointer;
+}
+
+.gold{
+    color:gold;
+}
+
+.texte{
+    display: inline-block;
+    width: 78vw;
+    margin-left:1%;
+}
